@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# React + Vite + TypeScript Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the soidarity world principal portal 
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Project Structure](#project-structure)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 🚀 Fast development build with **Vite**
+- 🔥 Hot Module Replacement (HMR)
+- ✅ Type safety with **TypeScript**
+- 📦 Minimal and optimized production build
+- 🛠️ Ready-to-use React setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/G-nioos-By-Solidarityworld/portail-principale.git
+   cd portail-principale
+
+npm install
+# or
+yarn
+
+npm run dev
+# or
+yarn dev
+
+# Open your browser at 
+http://localhost:5173
+
+# Project structure
+
+react-vite-ts-project/
+├── public/              # Static files
+├── src/                 # Source code
+│   ├── assets/          # Images and static assets
+│   ├── components/      # Reusable React components
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Entry point of the application
+│   └── index.css        # Global styles
+├── .eslintrc.js         # ESLint configuration
+├── tsconfig.json        # TypeScript configuration
+├── vite.config.ts       # Vite configuration
+├── package.json         # Project metadata and scripts
+└── README.md            # Project documentation
+
